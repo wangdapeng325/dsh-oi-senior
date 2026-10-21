@@ -1,0 +1,12 @@
+# 运行期依赖链接：指向 DSH profile 自己的 @deepseek-ai 副本，由 install.mjs 建立
+node_modules/
+
+# 构建自检可能产生的临时目录
+.build-stubs/
+
+# 独立验收留下的探针与原始输出（保留报告，不保留临时产物）
+review/risk/
+review/risk2/
+
+# 预览临时文件
+review-qr-note-preview.md
