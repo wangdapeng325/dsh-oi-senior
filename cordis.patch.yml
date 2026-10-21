@@ -1,0 +1,19 @@
+# dsh-oi-senior 组合包（bundle）配置层：按包名引用插件，Node 模块解析
+# 会从 profile 的 node_modules 找到已安装的代码。配合 `dsh plugin add` 使用。
+- insert:
+    - id: oi-senior
+      name: dsh-oi-senior
+      config:
+        judge:
+          compiler: g++
+          std: '-std=c++14'
+          optimization: '-O2'
+          timeLimitMs: 2000
+          compileTimeoutMs: 30000
+          workDir: ''
+        ima:
+          enabled: true
+          cliPath: ''
+          clientId: ''
+          apiKey: ''
+          timeoutMs: 20000
